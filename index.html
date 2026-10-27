@@ -3,107 +3,193 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/mackets/header.css">
+    <link rel="stylesheet" href="./css/mackets/main.css">
     <title>Лучшие кондитерские мира</title>
 </head>
 
 <body>
-    <header>
-        <h1>Лучшие кондитерские мира</h1>
+    <header class="header">
+        <nav class="menu">
+            <ul>
+                <li class="active"><a href="index.html"><b>Самые высокие здания</b></a><br></li>
+                <li><a href="table.html">Список самых высоких зданий</a></li>
+            </ul>
+        </nav>
+        <form class="search">
+            <input type="text" placeholder="Поиск">
+            <button type="submit">🔍</button>
+        </form>
     </header>
-    <main>
-        <p>
-            <a href="index.html"><b>Самые высокие здания</b></a><br>
-            <a href="table.html">Список самых высоких зданий</a>
-        </p>
+    <main class="content">
 
-        <hr>
+        <!-- строка картинок под меню -->
+        <section class="gallery">
+            <div class="pic g1">
+                <a href="Dominique.html">
+                    <img src="./img/Dominique Ansel Bakery.jpeg" alt="Dominique Ansel Bakery в Нью-Йорке">
+                </a>
+            </div>
+            <div class="pic g2">
+                <a href="space.html">
+                    <img src="./img/Tatte.jpg" alt="Tatte в Бостоне">
+                </a>
+            </div>
+            <div class="pic g3">
+                <a href="space.html">
+                    <img src="./img/Pâtisserie Sadaharu Aoki.jpg" alt="Pâtisserie Sadaharu Aoki в Токио и Париже">
+                </a>
+            </div>
+            <div class="pic g4">
+                <a href="space.html">
+                    <img src="./img/Demel.jpg" alt="Demel в Вене">
+                </a>
+            </div>
+        </section>
 
-        <table cellpadding="5" cellspacing="5">
-            <tr>
-                <td>
-                    <a href="Dominique.html">
-                        <img src="./img/Dominique Ansel Bakery.jpeg"
-                            alt="Dominique Ansel Bakery в Нью-Йорке" width="125" height="125">
-                    </a>
-                </td>
-                <td>
-                    <a href="space.html">
-                        <img src="./img/Tatte.jpg"
-                            alt="Tatte в Бостоне" width="125" height="125">
-                    </a>
-                </td>
-                <td>
-                    <a href="space.html">
-                        <img src="./img/Pâtisserie Sadaharu Aoki.jpg"
-                            alt="Pâtisserie Sadaharu Aoki в Токио и Париже" width="125" height="125">
-                    </a>
-                </td>
-                <td>
-                    <a href="space.html">
-                        <img src="./img/Demel.jpg"
-                            alt="Demel в Вене" width="125" height="125">
-                    </a>
-                </td>
-                <td>
-                    <a href="space.html">
-                        <img src="./img/Conditori La Glace.jpg"
-                            alt="Conditori La Glace в Копенгагене" width="125" height="125">
-                    </a>
-                </td>
-            </tr>
-        </table>
+        <!-- Кружки-->
+        <section class="round-row">
+            <article class="round-item">
+                <div class="round">
+                    <img src="img/Fika Bageriet.jpg">
+                </div>
+                <h3>Fika Bageriet</h3>
+                <p>Швеция<a href="#">...</a></p>
+            </article>
+            <article class="round-item">
+                <div class="round">
+                    <img src="img/Bakeri Fjord.jpg">
+                </div>
+                <h3>Bakeri Fjord</h3>
+                <p>Норвегия<a href="#">...</a></p>
+            </article>
+            <article class="round-item">
+                <div class="round">
+                    <img src="img/Cukrárna Praha.jpg">
+                </div>
+                <h3>Cukrárna Praha</h3>
+                <p>Чехия<a href="#">...</a></p>
+            </article>
+            <article class="round-item">
+                <div class="round">
+                    <img src="img/Pekárna U Zlatého Klasu.jpg">
+                </div>
+                <h3>Pekárna U Zlatého Klasu</h3>
+                <p>Чехия <a href="#">...</a></p>
+            </article>
+            <article class="round-item">
+                <div class="round">
+                    <img src="img/Pékség Arany.jpg">
+                </div>
+                <h3>Pékség Arany</h3>
+                <p>Венгрия<a href="#">...</a></p>
+            </article>
+            <article class="round-item">
+                <div class="round">
+                    <img src="img/Bäckerei Zürichsee.jpg">
+                </div>
+                <h3>Bäckerei Zürichsee</h3>
+                <p>Швейцария<a href="#">...</a></p>
+            </article>
+        </section>
 
-        <hr>
-        <p>
-            <img src="./img/Du Pain et des Idees.jpg"
-                alt="Du Pain et des Idees в Париже" width="200" height="237">
-            <b>Du Pain et des Idees в Париже, Франция</b>
-        </p>
+        <section class="bottom">
+            <!-- колонка 1-->
+            <article class="news-a">
+                <div class="pic">
+                    <img src="./img/Du Pain et des Idees.jpg" alt="Du Pain et des Idees в Париже">
+                </div>
+                <div class="news-text">
+                    <h2>Заголовок</h2>
+                    <div class="lines">
+                        <p>Одна из самых известных ремесленных пекарен Парижа.</p>
 
-        <p>Одна из самых известных ремесленных пекарен Парижа.</p>
+                        <p>Пекарню в 2002 году основал Кристоф Вассёр. Он самоучка, получал награды как пекарь, написал
+                            книгу и проводит
+                            мастер-классы по выпечке хлеба после закрытия. В 2008 году GaultMillau признал его лучшим
+                            пекарем Парижа.
+                            Его книга называется «Le Pain : de la Terre à la Table».</p>
+                    </div>
+                    <a class="btn" href="#">Подробнее»</a>
+                </div>
+            </article>
 
-        <p>Пекарню в 2002 году основал Кристоф Вассёр. Он самоучка, получал награды как пекарь, написал книгу и проводит
-            мастер-классы по выпечке хлеба после закрытия. В 2008 году GaultMillau признал его лучшим пекарем Парижа.
-            Его книга называется «Le Pain : de la Terre à la Table».</p>
+            <!-- колонка 2-->
+            <article class="news-b">
+                <h2>Czech Stop в Техасе, СШАк</h2>
+                <div class="lines">
+                    <p>Это придорожная заправка с пекарней и магазином, и её считают одним из главных мест, где едят
+                        колачи.</p>
 
-        <p>Пекарня занимает историческое помещение конца XIX века, которое имеет статус памятника истории. Сохранились
-            расписные стеклянные потолки, зеркала с фацетом и богато украшенный фасад. Источники расходятся в годе:
-            называют 1875-й и 1889-й.</p>
+                    <p>Это большое здание с деревянными панелями за рядами бензоколонок. Здесь продают свежую чешскую
+                        выпечку, а
+                        также кофе, подушки для путешествий и тамалес, так что оно остаётся придорожной остановкой. Со
+                        временем
+                        выпечка затмила остальной товар, и владелец Толк расширил пекарню в соседний алкогольный
+                        магазин. Тогда к
+                        названию добавилось «Little Czech Bakery».</p>
 
+                </div>
+                <a class="btn btn-right" href="#">Подробнее»</a>
+            </article>
 
-        <p>Что попробовать.</p>
+            <!-- колонка 3-->
+            <div class="news-c">
+                <article class="mini">
+                    <div class="mini-text">
+                        <h2>Золотой колос</h2>
+                        <div class="lines">
+                            <p>«Золотой колос» — легендарный советский ресторан на ВДНХ в Москве. Здание в стиле
+                                сталинского ампира построил в 1954 году архитектор Анатолий Ефимов у Каменского пруда.
+                            </p>
+                        </div>
+                        <a class="btn btn-right" href="#">Подробнее»</a>
+                    </div>
+                    <div class="pic">
+                        <img src="./img/Золотой колос.jpg">
+                    </div>
+                </article>
 
-        <ul>
-            <li>
-                Pain des amis («хлеб друзей») — главная визитная карточка. У него хрустящая корочка, нежный мякиш и
-                    необычный дымный привкус.
-            </li>
-            <li>
-                Бриошь с цветком апельсина, улитка (escargot) с шоколадом и фисташками, слойка с яблоком.
-            </li>
-            <li>
-                Также упоминают пекарский флан.
-            </li>
-        </ul>
-        <br>
+                <article class="mini">
+                    <div class="mini-text">
+                        <h2>Хлебный домк</h2>
+                        <div class="lines">
+                            <p>
+                                «Хлебный дом» — крупный производитель хлеба родом из Петербурга, который раньше входил в
+                                финскую группу Fazer, а в 2025 году перерегистрировался в Москве.
+                            </p>
+                        </div>
+                        <a class="btn btn-right" href="#">Подробнее»</a>
+                    </div>
+                    <div class="pic">
+                        <img src="./img/Хлебный дом.jpg">
+                    </div>
+                </article>
 
-        <p>
-            <img src="./img/Czech Stop.jpeg"
-                alt="Czech Stop в Техасе" width="200" height="237">
-            <b>Czech Stop в Техасе, США</b>
-        </p>
+                <article class="mini">
+                    <div class="mini-text">
+                        <h2>Pasticceria Verdi</h2>
+                        <div class="lines">
+                            <p>
+                                «Pasticceria Verdi» — бар-кондитерская в тосканском городке Ламполекьо, где, по отзывам
+                                гостей, всё делают на месте: от утренней выпечки до традиционного панеттоне и пасхальной
+                                колъомбы.
+                            </p>
+                        </div>
+                        <a class="btn btn-right" href="#">Подробнее»</a>
+                    </div>
+                    <div class="pic">
+                        <img src="./img/Pasticceria Verdi.jpg">
+                    </div>
+                </article>
+            </div>
 
-        <p>Это придорожная заправка с пекарней и магазином, и её считают одним из главных мест, где едят колачи.</p>
-
-        <p>Это большое здание с деревянными панелями за рядами бензоколонок. Здесь продают свежую чешскую выпечку, а
-            также кофе, подушки для путешествий и тамалес, так что оно остаётся придорожной остановкой. Со временем
-            выпечка затмила остальной товар, и владелец Толк расширил пекарню в соседний алкогольный магазин. Тогда к
-            названию добавилось «Little Czech Bakery».</p>
-
-        <h2>...</h2>
+        </section>
     </main>
     <footer>
-        <p><i>Черданцев Егор Павлович Б9124-09.03.04(5) 2026</i></p>
+        <p>
+            <i>Черданцев Егор Павлович Б9124-09.03.04(5) 2026</i>
+        </p>
     </footer>
 </body>
 
