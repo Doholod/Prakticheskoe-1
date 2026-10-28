@@ -1,7 +1,6 @@
 .header {
   display: flex;
-  justify-content: space-between;
-  align-items: stretch;      
+  justify-content: space-between;     
   min-height: 48px;          
   margin: 0 5px;
   border-top: 4px solid #ddd;
