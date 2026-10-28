@@ -1,21 +1,20 @@
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: stretch;      /* меню растягивается на всю высоту шапки */
-  min-height: 48px;          /* было height: шапка теперь может расти */
+  align-items: stretch;      
+  min-height: 48px;          
   margin: 0 5px;
   border-top: 4px solid #ddd;
   border-bottom: 3px double #ccc;
 }
 
-/* ===== меню ===== */
 .menu {
   display: flex;
 }
 
 .menu ul {
   display: flex;
-  flex-wrap: wrap;           /* при нехватке места пункты переносятся целиком */
+  flex-wrap: wrap;           
   margin: 0;
   padding: 0;
   list-style: none;
@@ -23,7 +22,7 @@
 
 .menu li {
   display: flex;
-  align-items: center;       /* текст по центру по вертикали */
+  align-items: center;       
   padding: 0 15px;
 }
 
@@ -31,10 +30,9 @@
   color: #000;
   text-decoration: none;
   font-size: 16px;
-  white-space: nowrap;       /* слова внутри пункта не разрываются */
+  white-space: nowrap;
 }
 
-/* активный пункт: рамки по бокам на всю высоту */
 .menu li.active {
   margin-left: 30px;
   padding: 0 14px;
@@ -48,11 +46,10 @@
   font-size: 18px;
 }
 
-/* ===== поиск ===== */
 .search {
   display: flex;
-  flex-wrap: nowrap;         /* лупа всегда правее поля */
-  flex-shrink: 0;            /* форма не сжимается */
+  flex-wrap: nowrap;         
+  flex-shrink: 0;            
   align-items: center;
   align-self: center;
   gap: 5px;
